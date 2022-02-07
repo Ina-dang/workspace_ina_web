@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>color : <input type="color" name="color" value="#ffee00"></p>
+        <hr>
+        <p>date : <input type="date" name="date" min="2022-02-02" max="2022-02-15"></p>
+        <p>month : <input type="month" name="month"></p>
+        <p>week : <input type="week" name="week"></p>
+        <hr>
+        <p>time : <input type="time" name="time" id="time"></p>
+        <p>datetime : <input type="datetime" name="datetime"></p>
+        <p>datatime-local : <input type="datetime-local" name="datatime-local" id="datatime-local"></p>
+        <a href="https://www.naver.com" id="button1"> 
+            <input type="button" value="click me🍕" id="button1"></a>
+        <!-- <button>click me🍕</button> -->
+        <input type="file" name="file" accept="image/jpeg">
+    </form>
+
+    <script>
+        var date = new Date();
+        document.getElementById("time").value = date.getHours() + ":" + date.getMinutes();
+
+        document.getElementById("button1").onclick = function(){
+            return confirm("네이버로 이동하시겠습니까?");
+        }
+        // document.getElementById("button1").onclick = function(){
+        //     alert ("you click me!!");
+        // }
+    </script>
+</body>
+</html>

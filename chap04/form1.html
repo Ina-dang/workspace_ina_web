@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- 서버에서 처리해야하는 것들은 hidden으로 // name&value가 한 쌍-->
+        <input type="hidden" name="ie" value="utf-8"> 
+        <input name="test" value=""> <!-- //type빼면 디폴트 값으로 text뜸 value는 text안에 값으로 자동표현-->
+        <input type="reset" value="reset"> <!--초기화-->
+        <input type="submit" name="sub" value="send"> <!--value에 값 적으면 보이는 문구 치환됨-->
+    
+        <hr>
+        <p>size 10 :  <input size="10"> <!-- 입력창 길이 --></p>
+        <p>size 20 :  <input size="20"></p>
+        
+        <hr>
+        <p>maxlength 3 :  <input maxlength="3"> <!-- 입력창 길이제한 --></p>
+        <p>maxlength 6 :  <input maxlength="6"></p>
+        
+        <hr>
+        <br>
+        <h3>카드 번호를 입력하세요</h3>
+        <input type="text" maxlength="4" name="card1">
+        <input type="password" maxlength="4" name="card2">
+        <input type="password" maxlength="4" name="card3">
+        <input type="text" maxlength="4" name="card4">
+
+        <input type="image" src="images/tick.png">
+
+        <hr>
+        <p><input type="search" name="search"></p>
+        <p><input type="url" name="url"></p>
+        <p><input type="email" name="email"></p>
+        <p><input type="tel" name="tel"></p>
+        <p><input type="number" name="number" min="10" max="20" step="2"></p>
+        <p><input type="range" name="range" min="0" max="100" step="2"></p>
+        <p><input type="date" name="date"></p>
+        <p><input type="time" name="time"></p>
+
+    </form>
+
+
+</body>
+</html>
