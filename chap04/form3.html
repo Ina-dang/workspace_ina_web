@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha512-SUwyLkI1Wgm4aEZkDkwwigXaOI2HFLy1/YW73asun4sfvlkB9Ecl99+PHfCnfWD0FJjIuFTvWMM7BZPXCckpAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form method="post" action="test.html" enctype="application/x-www-form-urlencoded">
+        <p>dafult<input name="value1" ></p>
+        <p>readonly<input name="value2" readonly></p>
+        <p>disabled<input name="value3" disabled></p>
+        <p>url <input type="url" name="url" formnovalidate></p>
+        <p>약관동의<input type="checkbox"required ></p>
+        <hr>
+        <input type="file" multiple> <!-- multiple 쓰면 파일 여러 개 선택 가능 -->
+        <hr>
+        <select size=7 name="dept" id="class"> <!-- input 타입 radio랑 비슷 (여러개 중 하나)-->
+            <optgroup label ="공과대학">
+            <option value="archi">건축공학과</option>
+            <option value="mechani">기계공학과</option>
+            <option value="indust">산업공학과</option>
+            <option value="elec" selected>전기전자공학과</option>
+            <option value="chemical">화학공학과</option>
+            </optgroup>
+            <optgroup label ="문과대학">
+            <option>사학과</option>
+            <option>어문학부</option>
+            <option>철학사회</option>
+            </optgroup>
+        </select>
+        <hr>
+        <textarea name="content" id="textarea" cols="30" rows="10" placeholder="텍스트를 입력하세요"></textarea>
+
+        <button>전송</button> <!-- default 값 = submitm, |reset|button -->
+        <button formaction="" formmethod="get" formnovalidate formenctype="application/x-www-form-urlencoded">전송2</button>
+        <button ><i class="far fa-flushed" style="font-size: 20;"></i> 전송하기</button>
+    </form>
+</body>
+</html>
