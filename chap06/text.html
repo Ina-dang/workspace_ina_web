@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trans1{text-transform: uppercase;} 
+        /* text-decoration은 상속이 안돼서 a링크에 직접 넣어줘야함 */
+        .trans1 a {text-decoration: none; color: black; }
+        .trans2{text-transform: capitalize;}
+        .trans2 a {text-decoration: line-through;} /* 취소선 */
+
+        .shadow1 {color: orange; text-shadow: 1px 1px; direction: rtl; text-align: center}
+        .shadow2 {text-shadow: 5px 5px 3px red;}
+        .shadow3 {color : white; text-shadow: 2px -2px 3px black;}
+        .shadow4 {background-color:black; padding : 20px; 
+            text-shadow: 0 0 4px #ccc, 0 -2px 4px #ff3, 
+            2px -4px 4px #fd3, -2px -6px 4px #f80, 2px -8px 4px #f20; }
+
+        div {width: 300px; border: 1px solid; margin: 15px; overflow: hidden; text-overflow: ellipsis;}
+        .cls2 {white-space: nowrap; text-align: center;}
+        .cls3 {white-space: pre; text-align: right;}
+        .cls4 {white-space: pre-line ; text-align: justify;}
+        .cls5 {white-space: pre-wrap;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="trans1"><a href="#">html</a></li>
+        <li class="trans1"><a href="#">css</a></li>
+        <li class="trans2"><a href="#">javascript</a></li>
+    </ul>
+
+    <h1 class="shadow1">HT하아아안글5</h1>
+    <h1 class="shadow2">HTML5</h1>
+    <h1 class="shadow3">HTML5</h1>
+    <h1 class="shadow4">HTML5</h1>
+
+    <div class="cls1">
+        모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 국회는 의장 1인과 부의장 2인을 선출한다. 국회의원은 국가이익을 우선하여 양심에 따라 직무를 행한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+    </div>
+    <div class="cls2"> 
+        모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 국회는 의장 1인과 부의장 2인을 선출한다. 국회의원은 국가이익을 우선하여 양심에 따라 직무를 행한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+    </div>
+    <div class="cls3">
+        모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 국회는 의장 1인과 부의장 2인을 선출한다. 국회의원은 국가이익을 우선하여 양심에 따라 직무를 행한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+    </div>
+    <div class="cls4">
+        모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다.
+         국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다.
+         국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 국회는 의장 1인과 부의장 2인을 선출한다. 국회의원은 국가이익을 우선하여 양심에 따라 직무를 행한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+    </div>
+    <div class="cls5">
+        모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 
+        국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 
+        국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 국회는 의장 1인과 부의장 2인을 선출한다. 국회의원은 국가이익을 우선하여 양심에 따라 직무를 행한다. 국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+    </div>
+</body>
+</html>
