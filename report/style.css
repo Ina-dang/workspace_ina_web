@@ -1,1 +1,55 @@
 /* 전체CSS */
+body {
+    background-image: url(image/night.png);
+    background-repeat: no-repeat;
+    width: 1024px;
+} 
+/* index.html CSS */
+    .main {
+        background-color: aliceblue;
+        width : 80%; height: 200px; 
+        position: absolute; top: 0px; left: 0px; 
+        border: 2px solid red;
+        margin: 20px auto auto 150px;
+        color: black;
+    }
+
+    .menu {
+        background-color: aliceblue;
+        width : 80%; height:100px; 
+        position: absolute; top: 0px; left: 0px; 
+        border: 2px solid red;
+        margin: 224px auto auto 150px;
+        color: black;
+    }
+    .commu-wrap1 {
+        background-color: aliceblue;
+        width : 80%; height:200px; 
+        position: absolute; top: 0px; left: 0px; 
+        border: 2px solid red;
+        margin: 328px auto auto 150px;
+    }
+    .commu-wrap2 {
+        background-color: aliceblue;
+        width : 80%; height:300px; 
+        position: absolute; top: 0px; left: 0px; 
+        border: 2px solid red;
+        margin: 532px auto auto 150px;
+    }
+    .commu-wrap3 {
+        background-color: aliceblue;
+        width : 80%; height:600px; 
+        position: absolute; top: 0px; left: 0px; 
+        border: 2px solid red;
+        margin: 836px auto auto 150px;
+    }
+    .commu-tail {
+        background-color: aliceblue;
+        width : 80%; height: 200px; 
+        position: absolute; top: 0px; left: 0px; 
+        border: 2px solid red;
+        margin: 1440px auto auto 150px;
+        color: black;
+    }
+    
+
