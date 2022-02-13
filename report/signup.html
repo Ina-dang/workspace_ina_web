@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {list-style-type: none;}
+        button {
+            background-color: orange; color: #eee; border-radius: 5%;
+            margin-left : 40px; margin-bottom: 10px;
+            width: 175px;
+        }
+        div {text-align: center;}
+    </style>
+</head>
+<body>
+    <!-- 회원가입 -->
+    <div>
+        <form action="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/index.html" method="post">
+            <ul>
+                <li><label for="uname" class="signup">ID</label></li>
+                <input type="text" name="uname" id="uname" placeholder="아이디를 입력하세요" minlength="4" maxlength="10">
+            </ul>
+            <ul>
+                <li><label for="pw" class="signup">비밀번호</label></li>
+                <input type="text" name="pw" id="pw" placeholder="비밀번호를 입력하세요" minlength="8" maxlength="12">
+            </ul>
+            <ul>
+                <li><label for="pw" class="signup">비밀번호 확인</label></li>
+                <input type="password" name="pw" id="pw" placeholder="비밀번호 확인을 입력하세요" minlength="8" maxlength="12">
+            </ul>
+            <ul>
+                <li><label for="name" class="signup">이름</label></li>
+                <input type="text" name="name" id="name" placeholder="이름을 입력하세요">
+            </ul>
+        </form>
+        <button type="submit">가입하기</button>
+    </div>
+</body>
+</html>
