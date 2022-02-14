@@ -1,55 +1,102 @@
+@font-face {
+    font-family: 'BM', sans-serif;
+    src: url(fonts/AnyConv.com__BMDOHYEON_ttf.woff);
+}
 /* 전체CSS */
 body {
-    background-image: url(image/night.png);
+    background-image: url(image/sellas.jpg);
+    background-position: top center;
     background-repeat: no-repeat;
-    width: 1024px;
+    /* width: 0; */
+    margin: 0;
+    /* padding: 0; */
 } 
-/* index.html CSS */
-    .main {
-        background-color: aliceblue;
-        width : 80%; height: 200px; 
-        position: absolute; top: 0px; left: 0px; 
-        border: 2px solid red;
-        margin: 20px auto auto 150px;
-        color: black;
-    }
 
-    .menu {
-        background-color: aliceblue;
-        width : 80%; height:100px; 
-        position: absolute; top: 0px; left: 0px; 
-        border: 2px solid red;
-        margin: 224px auto auto 150px;
-        color: black;
-    }
-    .commu-wrap1 {
-        background-color: aliceblue;
-        width : 80%; height:200px; 
-        position: absolute; top: 0px; left: 0px; 
-        border: 2px solid red;
-        margin: 328px auto auto 150px;
-    }
-    .commu-wrap2 {
-        background-color: aliceblue;
-        width : 80%; height:300px; 
-        position: absolute; top: 0px; left: 0px; 
-        border: 2px solid red;
-        margin: 532px auto auto 150px;
-    }
-    .commu-wrap3 {
-        background-color: aliceblue;
-        width : 80%; height:600px; 
-        position: absolute; top: 0px; left: 0px; 
-        border: 2px solid red;
-        margin: 836px auto auto 150px;
-    }
-    .commu-tail {
-        background-color: aliceblue;
-        width : 80%; height: 200px; 
-        position: absolute; top: 0px; left: 0px; 
-        border: 2px solid red;
-        margin: 1440px auto auto 150px;
-        color: black;
-    }
-    
+/* 공통사용 ul */
+ul {list-style-type: none;}
 
+.input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: white 0 solid;
+}
+button {
+    background-color: palegreen; color: #eee; border-radius: 10%;
+    width: 100px;
+    margin: auto 150px;
+    padding: 5px;
+}
+a { color: white; text-decoration: none;}
+
+h3 { text-align: center;  }
+
+table{
+    width: 600px;
+    text-align: center; 
+    border:  palegreen 3px solid ;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+}  
+     
+table th {
+background-color: palegreen;
+}
+
+/* sign_up */
+.signup {
+    width: 400px;
+    margin: 130px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8)
+    }
+    .signup li {padding : 5px}
+    .signup h6 {text-align:center; margin : auto auto -10px auto; padding: 5px ;}
+
+/* sign_in */
+.login {
+    width: 400px;
+    margin: 130px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+/* notice */
+.notice {
+    margin: 130px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+.button_notice a {
+text-decoration: none;
+}
+
+.button_notice {
+margin: auto 820px;
+}
+
+.notice_index {
+margin: auto 500px;
+}
+.notice_index ul li { 
+width: 10px;
+display: inline-block;
+border: 2px solid;
+padding: 5px;
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contract {
+    width: 500px;
+    margin: 130px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+ }
+ 
+.img-button {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 100px;
+    padding : 10px;
+}

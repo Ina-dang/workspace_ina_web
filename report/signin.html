@@ -6,31 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul {list-style-type: none;}
-        button {
-            background-color: orange; color: #eee; border-radius: 5%;
-            margin-left : 40px; margin-bottom: 10px;
-            width: 175px;
-        }
-        div {text-align: center;}
+    
     </style>
     <!-- 일단 css링크 넣어둠 -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 로그인 -->
-    <div>
+    <div class="login">
+        <h3><label for="uname" class="signup">Maple Story에 로그인하세요</label></h3>
         <form action="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/index.html" method="post">
             <ul>
-                <li><label for="uname" class="signup">ID</label></li>
-                <input type="text" name="uname" id="uname" placeholder="아이디를 입력하세요" minlength="4" maxlength="10">
+                <input type="text" class="input" name="uname" id="uname" placeholder="아이디를 입력하세요" minlength="4" maxlength="10">
+                <span aria-hidden="true" ></span>
             </ul>
             <ul>
-                <li><label for="pw" class="signup">비밀번호</label></li>
-                <input type="text" name="pw" id="pw" placeholder="비밀번호를 입력하세요" minlength="8" maxlength="12">
+                <input type="text" class="input" name="pw" id="pw" placeholder="비밀번호를 입력하세요" minlength="8" maxlength="12">
             </ul>
         </form>
         <button type="submit"> <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/index.html">로그인</a></button>
     </div>
+    
 </body>
 </html>

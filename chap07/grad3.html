@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cls {width: 400px; height: 200px; border: 1px solid;}
+        .grad1 { /* 무지개 */
+            background: repeating-linear-gradient(315deg,
+            indigo 0px,indigo 20px, 
+            midnightblue 20px, midnightblue 40px, 
+            royalblue 40px, royalblue 60px , 
+            seagreen 60px, seagreen 80px, 
+            yellow 80px, yellow 100px, 
+            orange 100px, orange 120px, 
+            red 120px, red 140px
+            )
+        }
+        .grad2 {
+            background: repeating-radial-gradient(circle, white 0, white 15px, #aaa 15px, #aaa 30px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cls grad1"></div>
+    <div class="cls grad2"></div>
+</body>
+</html>
