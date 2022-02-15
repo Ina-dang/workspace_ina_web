@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container, .container > div, .header, .footer {padding: 20px; border: 1px solid #ccc; }
+        .container, .header > div, .footer > div { width: 960px; margin: 0 auto; }
+
+        .header {background-color: lightsalmon;}
+
+        .sidebar {width: 220px; float: right;  margin: 20px 0; }
+        .sidebar .btn-login a{text-decoration: none; display: block; background: #faa; padding: 12px; text-align: center; color: white; border-radius: 30px;}
+        .sidebar .btn-login a:hover {background-color: #e77;}
+        .contents {
+            width: 620px;
+            float: left;
+            margin: 20px 0;
+            min-height : 400px;
+        }
+        .container::after {clear:both; display: block; content: ' ';}
+        .footer {
+            background-color: lightsalmon;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+        <h1>사이트제목</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>사이드바</h2>
+            <div class="btn-login">
+                <a href="#">로그인</a>
+            </div>
+            <ul>
+                <li>제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 지방자치단체는 주민의 복리에 관한 사무를 처리하고 재산을 관리하며, 법령의 범위안에서 자치에 관한 규정을 제정할 수 있다.</li>
+                <li>국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다. 모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다.</li>
+                
+            </ul>
+        </div>
+        <div class="contents">
+            <h2>본문</h2>
+            <p>대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
+            <p>국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 대통령은 법률에서 구체적으로 범위를 정하여 위임받은 사항과 법률을 집행하기 위하여 필요한 사항에 관하여 대통령령을 발할 수 있다.</p>
+        </div>
+        <p class="temp"></p>
+    </div>
+    <div class="footer">
+        <div>
+        <p>국회는 의원의 자격을 심사하며, 의원을 징계할 수 있다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 대통령은 법률에서 구체적으로 범위를 정하여 위임받은 사항과 법률을 집행하기 위하여 필요한 사항에 관하여 대통령령을 발할 수 있다.</p>
+        <p>Copyright &copy; all rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>

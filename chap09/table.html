@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin: 0;}
+        .board {text-align: center; padding: 5px; font-size: 12px;
+            margin: 10px auto; border-collapse: collapse; width:800px;
+            table-layout: fixed;
+            /* word-break: break-all; */
+            font-family: dotum;
+         }
+        .board tr th { padding: 10px; background: steelblue; color: aliceblue;} 
+        .board td, .board th {padding: 8px;}
+        h2 {text-align: center;}
+
+        .board .col1,.board .col5 {width: 10%;}
+        .board .col3 {width: 15%;}
+        .board .col4 {width: 10%;}
+        /* selector 인접 태그 선택자 */
+        .board td, .board td + td + td {text-align: center;}
+        .board td + td {text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+        .board table a {text-decoration: none; color : black}
+        .board table a + a {font-size: .7em; color: purple;}
+
+        .board tr + tr:hover {background: lightgray;}
+    </style>
+</head>
+<body>
+    <div>
+        <h2>게시판</h2>
+    <table class="board">
+        <tr> <!-- table 헤더역할들 -->
+            <th class="col1"> 글번호 </th>
+            <th class="col2"> 제목 </th>
+            <th class="col3"> 작성일 </th>
+            <th class="col4"> 작성자 </th>
+            <th class="col5"> 조회수 </th>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="#">게시글aaaaaaaaaaaaasdasdasdasd asdawdawd asd asdawd awd asd awd awd  제목</a><a href="">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="#">게시글 제목</a><a href="">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="#">게시글 제목</a><a href="">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="#">게시글 제목</a><a href="">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="#">게시글 제목</a><a href="">[0]</a></td>
+            <td>2022-02-14</td>
+            <td>작성자</td>
+            <td>0</td>
+        </tr>
+     
+    </table>
+    </div>
+</body>
+</html>

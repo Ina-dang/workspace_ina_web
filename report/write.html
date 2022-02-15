@@ -7,10 +7,26 @@
     <title>Document</title>
     <style>
         .write {
-        margin: 130px auto;
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.8)
-        }  
+            margin: 130px auto;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8)
+            }   
+            .table_write_tr .col1 { width: 70%;}
+
+            .textarea {width: 99%; height: 400px; resize: none;}
+            .textarea1 {width: 99%; height: 22px; resize: none;}
+
+            .btn_write { 
+                padding: 10px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .btn_write a {
+                background: black;
+                padding: 10px;
+                border-radius: 7px;
+                margin: 0 auto;
+             }
     </style>
     <!-- 일단 css링크 넣어둠 -->
     <link rel="stylesheet" href="style.css">
@@ -18,20 +34,28 @@
 <body>
     <!-- 게시판상세 화면 -->
     <div class="write">
-    <table class="table">
-        <tr class="a">
-            <td>글제목asdasdasdasdasdasd</td>
-        </tr>
-        <tr class="tr2">
-            <td>내용을 입assdasdassdassdsadasdasdsa해주세요</td>
-        </tr>
-    </table>
-    <button type="submit">
-        <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/write.html">수정</a>
-        </button>
-    <button type="submit">
-        <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/notice.html">목록</a>
-        </button>
+        <table class="table">
+            <tr class="table_write_tr">
+                <th class="col1">
+                    <textarea cols="0" rows="0" class="textarea1" ></textarea>
+                </th>
+                <th class="col2">20-05-05</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <textarea name="" id="" cols="30" rows="40" class="textarea" ></textarea>
+                    <!-- 제에에에위하여서 옷을 위하여서 미인을 구하기 위하여서 그리하였는가? 아니다 그들은 커다란 이상 곧 만천하의 대중을 품에 안고
+
+                    예수는 무엇을 위하여 광야에서 방황하였으며 공자는 무엇을 위하여 천하를 철환하였는가? 밥을 위하여서 옷을 위하여서 미인을 구하기 위하여서 그리하였는가? 아니다 그들은 커다란 이상 곧 만천하의 대중을 품에 안고 그들에게 밝은 길을 찾아 주며 그들을 행복스럽고 평화스러운 곳으로 인도하겠다는 커다란 이상을 품었기 때문이다 그러므로
+                    
+                    하는 것이다 보라 청춘을 ! 그들의 몸이 얼마나 튼튼하며 그들의 피부가 얼마나 생생하며 그들의 눈에 무엇이 타오르고 있는가? 우리 눈이 그것을 보는 때에 우리의 귀는 생의 찬미를 듣는다에에에에에에에목 -->
+                </td>
+            </tr>
+        </table>
+        <div class="btn_write">
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/write.html">수정</a>
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/write.html">취소</a>
+        </div>
     </div>
 </body>
 </html>
