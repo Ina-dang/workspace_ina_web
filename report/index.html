@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
         .main_body { background-color: white; margin: 0; }
         .main_body .all_header { background:url(image/sellas2.png) no-repeat; background-size: cover;
-        padding : 20px 15px 40px; border: 3px solid lawngreen; }
+        padding : 20px 15px;  }
         .main_body .all_header > * {width: 978px; margin: 0 auto; padding: 20px; }
-        .bg_logo, .bg_detail { float: left; padding: 10px; margin: 0 auto; border: 3px solid lawngreen;}
+        .bg_logo, .bg_detail { float: left; padding: 10px; margin: 0 auto; }
         .main_body .bg_detail {width: 300px; text-align: right;}
 
         .main_body .all_header::after, .commu_wrap::after {content: ' '; display:block; clear: both;}
 
         .main_body .all_nav { background: #01181C; padding: 30px;}
         .main_body .all_nav ul {width : 978px; margin: 0 auto 30px; padding: 40; list-style-type: none;  }
-        .main_body .all_nav li {float: left; margin : auto 60px ; border: 3px solid lawngreen;}
-        .main_body .all_nav li a {color: #eee; text-decoration: none; border: 3px solid lawngreen;}
+        .main_body .all_nav li {float: left; margin : auto 60px ; }
+        .main_body .all_nav li a {color: #eee; text-decoration: none; }
         
         .commu_wrap { border: 3px solid lawngreen; background: lightgray; min-height: 800px; width: 978px; margin: 0 auto; padding: 10px;}
         .commu_wrap > * {margin: 0 auto; border: 3px solid lawngreen;}
@@ -29,7 +32,17 @@
         .commu_wrap1 p {text-align: center; margin: 0 auto; padding: 5px;}
         .commu_wrap1_image {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
         .commu_wrap1 image { height:100%; width: 100%; border: 3px solid lawngreen;} 
-        .commu_wrap_right{width: 24%; border: 3px solid lawngreen;}
+        .commu_wrap_right{width: 24%; border: 3px solid lawngreen; margin: 20px auto;}
+        .main_btn_login { 
+            width : 150px; height: 25px; 
+            background: linear-gradient(#333, #666); cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 15px auto;
+        }
+        a {color: #ddd; text-decoration: none; text-align: center;}
+        .main_btn_login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
         
 
         footer {background: url(image/sellas2.png) repeat-x; text-align: center; color: #eee; padding: 50px; }
@@ -83,6 +96,10 @@
         <!-- commu login, 회원가입, id/pw찾기 right  -->
         <div class="commu_wrap_right">
             <!-- 로그인 회원가입 찾기 -->
+            <div class="main_btn_login"><a href="#">로그인</a></div>
+            <div class="main_btn_login"><a href="#">회원가입</a></div>
+            <div class="main_btn_login"><a href="#">id찾기</a></div>
+
         </div>
     </div>
     <footer>

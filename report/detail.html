@@ -5,57 +5,110 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <style>
-            .detail {
+             body {margin: 0 auto;}
+        .detail {
             width: 974px;
             min-height: 500px;
-            margin: 50px auto;
+            margin: 80px auto;
             padding: 15px;
-            background-color: rgba(255, 255, 255, 0.8)
-            }   
-
-            .detail_title{
-                width: ;
-            }
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }   
+    
+        .page{
+            width: 800px;
+            min-height: 400px;
+            /* border: 3px solid greenyellow; */
+            margin: 10px auto 0;
+            padding: 10px;
+        }
+        
+        .detail_title, .detail_question {
+            width: 780px;
+            margin: 0 auto;
+            padding: 0;
             
-            .btn_detail { 
-                padding: 10px;
-                margin: 0 auto;
-                text-align: center;
-            }
-            .btn_detail a {
-                background: linear-gradient(#666,#333);
-                padding: 10px;
-                border-radius: 7px;
-                margin: 0 auto;
-             }
+        }
 
-             .detail_div {
-                 width: 99%;
-                 height: 50px;
-                 /* white-space: nowrap; */
-                 overflow: scroll;
-                 /* word-break: break-all; */
-             }
+        .date, .detail_title_textarea{ float: left; }
+
+        .date {
+            margin: 10px 100px;
+            padding: 15px;
+            color: #222;
+        }
+
+        .detail_title::after {clear: both; content: ' '; display:block;}
+        
+        .detail_question{
+            min-height: 300px;
+        }
+        
+        
+        .detail_title_textarea, .detail_title_textarea1 {
+            resize: none;
+            border: 0;
+            margin: 10px auto;
+            padding: 20px 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #222;
+        }
+        
+        .detail_title_textarea {
+            width: 400px;
+            height: 14px;
+        }
+        
+        .detail_title_textarea1 {
+            width: 740px;
+            min-height: 300px;
+        }
+        
+        .btn_detail { 
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .btn_detail a:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+        
+        .btn_detail a {
+            background: linear-gradient(#666,#333);
+            padding: 10px;
+            border-radius: 7px;
+            margin: 0 10px;
+            }
+
+        .detail_div {
+            width: 99%;
+            height: 50px;
+            overflow: scroll;
+        }
     </style>
     <!-- 일단 css링크 넣어둠 -->
-    
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- 읽기 -->
     <main class="detail">
         <section class="page">
-        <div class="detail_title">
-            
-        </div>
+        <ul class="detail_title">
+            <li class="detail_title_textarea" placeholder="제목을 입력해 주세요"></li>
+            <li class="date"> 2022 - 05 - 14</li>
+        </ul>
         <div class="detail_question">
+            <div class="detail_title_textarea1" placeholder="본문을 입력해 주세요"></div>
 
         </div>
         </section>
         <div class="btn_detail">
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/write.html">수정</a>
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/write.html">취소</a>
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/detail.html">수정</a>
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/detail.html">취소</a>
         </div>
     </main>
 </body>

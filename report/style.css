@@ -1,7 +1,9 @@
+* {font-family: 'Noto Sans KR', sans-serif; }
 @font-face {
-    font-family: 'BM', sans-serif;
-    src: url(fonts/AnyConv.com__BMDOHYEON_ttf.woff);
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url(fonts/AnyConv.com__NotoSansKR-Regular.woff);
 }
+
 /* 전체CSS */
 
 .all_header { background:url(image/sellas2.png) no-repeat; background-size: cover;
@@ -26,17 +28,73 @@ ul {list-style-type: none;}
     width: 300px;
     padding: 10px;
     border-radius: 10px;
-    border: white 0 solid;
+    border: #eee 0 solid;
 }
-button {
-    background-color: palegreen; color: #eee; border-radius: 10%;
-    width: 100px;
-    margin: auto 150px;
-    padding: 5px;
-}
-a { color: white; text-decoration: none; text-align: center;}
 
-h3 { text-align: center;  }
+* > a { color: #eee; text-decoration: none; text-align: center;}
+
+
+
+/* index제외한 전체 배경화면 적용 */
+body {
+    background-image: url(image/sellas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+} 
+
+/* sign_up */
+.signup {
+    width: 400px;
+    margin: 150px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    /* border-radius: 20%; */
+    /* text-decoration: underline 3px; */
+}
+.signup li {padding : 5px ;}
+.signup h6 {text-align:center; margin : auto auto -10px auto; padding: 5px ; color : #222}
+
+/* sign_in */
+.login h3 {
+    background: none;
+    margin: 10px auto;
+    text-align: center;
+}
+.login {
+    width: 400px;
+    margin: 250px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* 로그인, 회원가입, 약관동의 제목 */
+.contract h3, .login h3, .signup1 { text-decoration: underline 3px; color : #222}
+
+/* 로그인, 회원가입, 약관동의 버튼 */
+.btn_login {
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding : 10px;
+    text-align: center;
+    background: linear-gradient(#666, #333)
+}
+.btn_login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+
+
+/* notice */
+.notice {
+    width: 1000px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
 
 table{
     width: 800px;
@@ -48,7 +106,6 @@ table{
     table-layout: fixed;
     word-break: break-all;
     font-family: dotum;
-    /* border-radius: 10px; */
 }  
 
 table th {
@@ -57,76 +114,18 @@ table th {
     color: #01181C;
 }
 
-/* index제외 */
-body {
-    background-image: url(image/sellas.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* width: 0; */
-    margin: 0;
-    /* padding: 0; */
-} 
-/* sign_up */
-.signup {
-    width: 400px;
-    margin: 130px auto;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-
-    /* border-radius: 20%; */
-    /* text-decoration: underline 3px; */
-}
-.signup li {padding : 5px}
-.signup h6 {text-align:center; margin : auto auto -10px auto; padding: 5px ;}
-
-/* sign_in */
-.login {
-    width: 400px;
-    margin: 50px auto;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    
-}
-
-.login h3 { text-decoration: underline 3px; }
-
-.btn_login {
-    width: 100px;
-    height: 20px;
-    background: black;
-    border-radius: 10px;
-    margin: 0 auto;
-    cursor: pointer;
-    padding : 10px;
-    text-align: center;
-    }
-
-/* notice */
-.notice {
-    width: 1000px;
-    margin: 50px auto;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.5)
-}
-
 
 /* contract */
 .contract {
     width: 500px;
-    margin: 50px auto;
+    margin: 117px auto;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
+    border-radius: 10px;
+ }
+
+ .contract_checkbox {
+     color : #222;
  }
  
-.img-button a {
-    margin: 0 auto;
-    background: black;
-    cursor: pointer;
-    width: 100px;
-    height: 20px;
-    padding : 5px;
-    border-radius: 10px;
-}
