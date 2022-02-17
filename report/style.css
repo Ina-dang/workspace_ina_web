@@ -6,22 +6,27 @@
 
 /* 전체CSS */
 
-.all_header { background:url(image/sellas2.png) no-repeat; background-size: cover;
+.all-header { background:url(image/sellas2.png) no-repeat; background-size: cover;
     padding : 10px 15px ; }
-    .all_header > * {width: 978px; margin: 0 auto; }
-    .bg_logo, .bg_detail { float: left; padding: 10px; margin: 0 auto;}
-    .bg_detail {width: 300px; text-align: right;}
+.all-header > * {width: 978px; margin: 0 auto; }
+.bg-logo, .bg-detail { float: left; padding: 10px; margin: 0 auto;}
+.bg-detail {width: 300px; text-align: right;}
     
-.all_header::after, .commu_wrap::after {content: ' '; display:block; clear: both;}
+.all-header::after, .commu-wrap::after {content: ' '; display:block; clear: both;}
 
-.all_nav { background: #01181C; padding: 20px;}
-.all_nav ul {width : 978px; margin: 0 auto 30px; list-style-type: none;  }
-.all_nav li {float: left; margin : auto 15px ;}
-.all_nav li a {color: #eee; text-decoration: none;}
+.all-nav { background: #01181C; padding: 20px;}
+.all-nav ul {width : 978px; margin: 0 auto 30px; list-style-type: none;  }
+.all-nav li {float: left; margin : auto 15px;}
+.all-nav li a {color: #eee; text-decoration: none; padding: 15px;}
+
+
+
 
 
 
 /* 공통사용 ul */
+* {color: #222;}
+* > a { color: #eee; text-decoration: none; text-align: center;}
 ul {list-style-type: none;}
 
 .input {
@@ -31,7 +36,6 @@ ul {list-style-type: none;}
     border: #eee 0 solid;
 }
 
-* > a { color: #eee; text-decoration: none; text-align: center;}
 
 
 
@@ -43,7 +47,7 @@ body {
     margin: 0;
 } 
 
-/* sign_up */
+/* sign-up */
 .signup {
     width: 400px;
     margin: 150px auto;
@@ -54,10 +58,10 @@ body {
     /* text-decoration: underline 3px; */
 }
 .signup li {padding : 5px ;}
-.signup h6 {text-align:center; margin : auto auto -10px auto; padding: 5px ; color : #222}
+.signup h6 {text-align:center; margin : auto auto -10px auto; padding: 5px ;}
 
-/* sign_in */
-.login h3 {
+/* sign-in */
+.login h3, .signup h3 {
     background: none;
     margin: 10px auto;
     text-align: center;
@@ -71,10 +75,10 @@ body {
 }
 
 /* 로그인, 회원가입, 약관동의 제목 */
-.contract h3, .login h3, .signup1 { text-decoration: underline 3px; color : #222}
+.contract h3, .login h3, .signup1, .signup h3 { text-decoration: underline 3px;}
 
 /* 로그인, 회원가입, 약관동의 버튼 */
-.btn_login {
+.btn-login {
     width: 100px;
     height: 20px;
     border-radius: 10px;
@@ -84,7 +88,7 @@ body {
     text-align: center;
     background: linear-gradient(#666, #333)
 }
-.btn_login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+.btn-login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
 
 
 /* notice */
@@ -125,7 +129,7 @@ table th {
     border-radius: 10px;
  }
 
- .contract_checkbox {
+ .contract-checkbox {
      color : #222;
  }
  

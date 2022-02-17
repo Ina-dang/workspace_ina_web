@@ -9,31 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        .main_body { background-color: white; margin: 0; }
-        .main_body .all_header { background:url(image/sellas2.png) no-repeat; background-size: cover;
+        .main-body { background-color: white; margin: 0; }
+        .main-body .all-header { background:url(image/sellas2.png) no-repeat; background-size: cover;
         padding : 20px 15px;  }
-        .main_body .all_header > * {width: 978px; margin: 0 auto; padding: 20px; }
-        .bg_logo, .bg_detail { float: left; padding: 10px; margin: 0 auto; }
-        .main_body .bg_detail {width: 300px; text-align: right;}
+        .main-body .all-header > * {width: 978px; margin: 0 auto; padding: 20px; }
+        .bg-logo, .bg-detail { float: left; padding: 10px; margin: 0 auto; }
+        .main-body .bg-detail {width: 300px; text-align: right;}
 
-        .main_body .all_header::after, .commu_wrap::after {content: ' '; display:block; clear: both;}
+        .main-body .all-header::after, .commu-wrap::after {content: ' '; display:block; clear: both;}
 
-        .main_body .all_nav { background: #01181C; padding: 30px;}
-        .main_body .all_nav ul {width : 978px; margin: 0 auto 30px; padding: 40; list-style-type: none;  }
-        .main_body .all_nav li {float: left; margin : auto 60px ; }
-        .main_body .all_nav li a {color: #eee; text-decoration: none; }
+        .main-body .all-nav { background: #01181C; padding: 30px;}
+        .main-body .all-nav ul {width : 978px; margin: 0 auto 30px; padding: 40; list-style-type: none;  }
+        .main-body .all-nav li {float: left; margin : auto 60px ; }
+        .main-body .all-nav li a {color: #eee; text-decoration: none; }
         
-        .commu_wrap { border: 3px solid lawngreen; background: lightgray; min-height: 800px; width: 978px; margin: 0 auto; padding: 10px;}
-        .commu_wrap > * {margin: 0 auto; border: 3px solid lawngreen;}
-        .commu_wrap_right, .commu_wrap_left { float: left ; padding: 10px;}
-        .commu_wrap_left {width: 70%; border: 3px solid lawngreen; }
-        .commu_wrap1, .commu_wrap2, .commu_wrap3 {border: 3px solid lawngreen; margin: 5px auto; padding: 10px;}
-        .commu_wrap1 h3 {margin: 0 auto; padding : 5px}    
-        .commu_wrap1 p {text-align: center; margin: 0 auto; padding: 5px;}
-        .commu_wrap1_image {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-        .commu_wrap1 image { height:100%; width: 100%; border: 3px solid lawngreen;} 
-        .commu_wrap_right{width: 24%; border: 3px solid lawngreen; margin: 20px auto;}
-        .main_btn_login { 
+        /* commu-wrap both */
+        .commu-wrap { border: 3px solid lawngreen; background: lightgray; min-height: 800px; width: 978px; margin: 0 auto; padding: 10px;}
+        .commu-wrap > * {margin: 0 auto; }
+        .commu-wrap-right, .commu-wrap-left { float: left ; padding: 10px;}
+        
+        /* left side */
+        .commu-wrap-left {width: 70%; }
+        .commu-wrap1, .commu-wrap2, .commu-wrap3 {border: 3px solid lawngreen; margin: 5px auto; padding: 10px;}
+        .commu-wrap1 h3 {margin: 0 auto; padding : 5px}    
+        .commu-wrap1 p {text-align: center; margin: 0 auto; padding: 5px;}
+        .commu-wrap1-image {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+        .commu-wrap1 image { height:100%; width: 100%; border: 3px solid lawngreen;} 
+        .commu-wrap-right{width: 24%; border: 3px solid lawngreen; margin: 20px auto;}
+        
+
+        /* commu-wrap3 */
+        .commu-wrap3 .party, .character, .security {
+            width: 97%; height: 200px;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            padding: 10px;
+        }
+        .party { background: url(image/lala1.jpg) no-repeat; }
+        .character { background: url(image/party.jpg) no-repeat; }
+        .security { background: url(image/sec.jpg) no-repeat; }
+        .commu-wrap3 h1 { margin: 0 ;}
+        
+        
+        
+        /* right side */
+        .main-btn-login { 
             width : 150px; height: 25px; 
             background: linear-gradient(#333, #666); cursor: pointer;
             padding: 10px;
@@ -42,38 +61,38 @@
             margin: 15px auto;
         }
         a {color: #ddd; text-decoration: none; text-align: center;}
-        .main_btn_login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+        .main-btn-login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
         
 
         footer {background: url(image/sellas2.png) repeat-x; text-align: center; color: #eee; padding: 50px; }
         address {border: 3px solid lawngreen;}
     </style>
 </head>
-<body class="main_body"> 
+<body class="main-body"> 
     <!-- 배경  다입히지말고..-->
-    <header class="all_header">
+    <header class="all-header">
         <!-- header -->
-        <div class="header_width">
-        <div class="bg_logo">
-            <img src="image/MapleStory_logo.png" alt="메이플스토리 로고">
+        <div class="header-width">
+        <div class="bg-logo">
+            <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
         </div>
-        <!-- <p class="bg_detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
+        <!-- <p class="bg-detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
         </div>
     </header>
-    <nav class="all_nav"> 
-        <!-- main_banner 안에 공지사항이랑 자유게시판 링크-->
+    <nav class="all-nav"> 
+        <!-- main-banner 안에 공지사항이랑 자유게시판 링크-->
         <ul>
             <li><a href="#">공지사항</a></li>
             <li><a href="#">자유게시판</a></li>
         </ul>
     </nav>
 
-    <div class="commu_wrap">
+    <div class="commu-wrap">
         <!-- commu 1,2,3 left -->
-        <div class="commu_wrap_left">
-            <div class="commu_wrap1">
+        <div class="commu-wrap-left">
+            <div class="commu-wrap1">
                 <!-- 이미지 , h5, 글 -->
-                <div class="commu_wrap1_image">
+                <div class="commu-wrap1-image">
                 <image src="image/events1.png" alt="이벤트이미지"></image>
                 </div>
                 <h3> '별빛 심포니 이벤트' 2021년 12월 30일 점검 후 시작</h3>
@@ -81,24 +100,34 @@
                 <p>2. 퀘스트를 완료하면 별빛 심포니로 이동합니다</p>
                 <p>3. 별빛 심포니에 위치한 npc가 제공하는 다양한 이벤트에 참여해 보세요.</p>
             </div>
-            <div class="commu_wrap2">
+            <div class="commu-wrap2">
                 <!-- commu2 사진이랑 ㅇㅇㅇ흥으에-->
             <h1>이 황금시대의 가치를 충분히</h1>
             <ul>
                 <li></li>
             </ul>
             </div>
-            <div class="commu_wrap3">
-                <!-- commu3 -->
-            <h1> 우리 청춘에서만</h1>
+            <div class="commu-wrap3">
+                <!-- commu3 이미지1 -->
+                <div class="party"></div>
+                <h1> 파티퀘스트 </h1>
+                <p>이번 달의 파티퀘스트 일정 정복하기! 용사님과 함께 파티퀘스트를 즐기는 방법</p>
+                <!-- commu3 이미지 -->
+                <div class="character"></div>
+                <h1> 캐릭터 & 스킬 </h1>
+                <p>모든 직업과 스킬을 한눈에! 메이플 스토리의 캐릭터, 스킬 정보 확인하기</p>
+                <!-- commu3 이미지 -->
+                <div class="security"></div>
+                <h1> 보안강화하기 </h1>
+                <p> 편리와 보안을 한방에! 안전하고 편하게 메이플 스토리 즐기기</p>
             </div>
         </div>
         <!-- commu login, 회원가입, id/pw찾기 right  -->
-        <div class="commu_wrap_right">
+        <div class="commu-wrap-right">
             <!-- 로그인 회원가입 찾기 -->
-            <div class="main_btn_login"><a href="#">로그인</a></div>
-            <div class="main_btn_login"><a href="#">회원가입</a></div>
-            <div class="main_btn_login"><a href="#">id찾기</a></div>
+            <div class="main-btn-login"><a href="#">로그인</a></div>
+            <div class="main-btn-login"><a href="#">회원가입</a></div>
+            <div class="main-btn-login"><a href="#">id찾기</a></div>
 
         </div>
     </div>

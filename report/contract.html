@@ -11,7 +11,7 @@
     <style>
         * {font-family: 'Noto Sans KR', sans-serif; }
 /* https://ovenapp.io/view/zLyiEKJbu0DUZmNWZxcRxPGlAawtes1h/3vbZo */
-        .contract_p {
+        .contract-p {
           border: 1px solid gray;
           overflow: auto;
           height: 300px;
@@ -26,11 +26,27 @@
 
 </head>
 <body>
+    <header class="all-header">
+        <!-- header -->
+        <div class="header-width">
+            <div class="bg-logo">
+                <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
+            </div>
+            <!-- <p class="bg-detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
+        </div>
+    </header>
+    <nav class="all-nav"> 
+        <!-- main-banner 안에 공지사항이랑 자유게시판 링크-->
+        <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자유게시판</a></li>
+        </ul>
+    </nav>
     <!-- 회원가입약관 -->
     <div class="contract">
         <h3>Maple Story의 모든 서비스에 사용하는 계정입니다</h3>
         <!-- <textarea name="contract" id="" cols="60" rows="30" > -->
-        <p class="contract_p">
+        <p class="contract-p">
 여러분을 환영합니다. <br><br>
 본 약관은 다양한 Maple Stroy 서비스의 이용과 관련하여 Maple Stroy <br>
 서비스를 제공하는 Maple Stroy 주식회사(이하 ‘Maple Stroy’)와 이를  <br> 
@@ -55,10 +71,10 @@ Maple Stroy는 서비스의 원활한 제공을 위하여 회원이 동의한 �
 <br> <br>
 Maple Stroy 서비스와 관련하여 궁금하신 사항이 있으시면  <br>고객센터(대표번호: 1588-7701/ 평일 09:00~18:00)로 <br> 문의 주시기 바랍니다.
         </p>
-        <p class="contract_checkbox"><input type="checkbox" class="contract_checkbox"> <b> 위 약관에 대해 확인하고 동의 </b></p>
+        <p class="contract-checkbox"><input type="checkbox" class="contract-checkbox"> <b> 위 약관에 대해 확인하고 동의 </b></p>
         <!-- <div class="img-button"> -->
-        <div class="btn_login">
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/signup.html">회원가입</a>
+        <div class="btn-login">
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/signup.html">회원가입</a>
         </div>
     </div>
 </body>

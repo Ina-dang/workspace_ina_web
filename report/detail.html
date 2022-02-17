@@ -5,111 +5,129 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <style>
-             body {margin: 0 auto;}
-        .detail {
-            width: 974px;
-            min-height: 500px;
-            margin: 80px auto;
-            padding: 15px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.5)
-        }   
-    
-        .page{
-            width: 800px;
-            min-height: 400px;
-            /* border: 3px solid greenyellow; */
-            margin: 10px auto 0;
-            padding: 10px;
-        }
+            body {margin: 0 auto;}
+            .write {
+                width: 974px;
+                min-height: 500px;
+                margin: 80px auto;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.5)
+            }   
         
-        .detail_title, .detail_question {
-            width: 780px;
-            margin: 0 auto;
-            padding: 0;
+            .page{
+                width: 800px;
+                min-height: 400px;
+                margin: 10px auto 0;
+                padding: 10px;
+            }
             
-        }
-
-        .date, .detail_title_textarea{ float: left; }
-
-        .date {
-            margin: 10px 100px;
-            padding: 15px;
-            color: #222;
-        }
-
-        .detail_title::after {clear: both; content: ' '; display:block;}
-        
-        .detail_question{
-            min-height: 300px;
-        }
-        
-        
-        .detail_title_textarea, .detail_title_textarea1 {
-            resize: none;
-            border: 0;
-            margin: 10px auto;
-            padding: 20px 20px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            color: #222;
-        }
-        
-        .detail_title_textarea {
-            width: 400px;
-            height: 14px;
-        }
-        
-        .detail_title_textarea1 {
-            width: 740px;
-            min-height: 300px;
-        }
-        
-        .btn_detail { 
-            padding: 10px;
-            margin: 20px auto;
-            text-align: center;
-        }
-        .btn_detail a:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
-        
-        .btn_detail a {
-            background: linear-gradient(#666,#333);
-            padding: 10px;
-            border-radius: 7px;
-            margin: 0 10px;
+            .write-title, .write-question {
+                width: 780px;
+                margin: 0 auto;
+                
+            }
+            .write-title{
+                min-height: 50px;
+            }
+            
+            .date {
+                float: right;
+                margin: 10px 100px;
+                padding: 15px;
+                color: #222;
             }
 
-        .detail_div {
-            width: 99%;
-            height: 50px;
-            overflow: scroll;
-        }
-    </style>
+            .date::after {clear: both; content: ' '; display:block;}
+            
+            .write-question{
+                min-height: 300px;
+            }
+            
+            
+            .write-title-textarea, .write-title-textarea1 {
+                resize: none;
+                border: 0;
+                margin: 10px auto;
+                padding: 20px 20px;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.5);
+                color: #222;
+            }
+            
+            .write-title-textarea {
+                width: 400px;
+                height: 14px;
+                overflow: hidden;
+            }
+            
+            .write-title-textarea1 {
+                width: 740px;
+                min-height: 300px;
+            }
+            
+            .btn-write { 
+                padding: 10px;
+                margin: 20px auto;
+                text-align: center;
+            }
+            .btn-write a:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+            
+            .btn-write a {
+                background: linear-gradient(#666,#333);
+                padding: 10px;
+                border-radius: 7px;
+                margin: 0 10px;
+                }
+
+            .write-div {
+                width: 99%;
+                height: 50px;
+                overflow: scroll;
+            }
+
+
+        </style>
     <!-- 일단 css링크 넣어둠 -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- 읽기 -->
-    <main class="detail">
-        <section class="page">
-        <ul class="detail_title">
-            <li class="detail_title_textarea" placeholder="제목을 입력해 주세요"></li>
-            <li class="date"> 2022 - 05 - 14</li>
+    <header class="all-header">
+        <!-- header -->
+        <div class="header-width">
+            <div class="bg-logo">
+                <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
+            </div>
+            <!-- <p class="bg-detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
+        </div>
+    </header>
+    <nav class="all-nav"> 
+        <!-- main-banner 안에 공지사항이랑 자유게시판 링크-->
+        <ul>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자유게시판</a></li>
         </ul>
-        <div class="detail_question">
-            <div class="detail_title_textarea1" placeholder="본문을 입력해 주세요"></div>
+    </nav>
+    <!-- 게시판상세 화면 -->
+    <main class="write">
+        <section class="page">
+            <div class="write-title">
+                <textarea class="write-title-textarea" readonly> 게시글을 썼습니다</textarea>
+            <div class="date"> 2022 - 05 - 14</div>
+        </div>
+        <div class="write-question">
+            <textarea class="write-title-textarea1" readonly> 
+                근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.
+                
+헌법재판소 재판관은 정당에 가입하거나 정치에 관여할 수 없다. 대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+             </textarea>
+            </div>
 
+        <div class="btn-write">
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/write.html">수정</a>
+            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/write.html">취소</a>
         </div>
-        </section>
-        <div class="btn_detail">
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/detail.html">수정</a>
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace_ina_web/report/detail.html">취소</a>
-        </div>
-    </main>
+    </div>
 </body>
 </html>
