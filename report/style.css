@@ -4,8 +4,8 @@
     src: url(fonts/AnyConv.com__NotoSansKR-Regular.woff);
 }
 
-/* 전체CSS */
-
+/* 전체CSS 공통적용 header, nav, footer */
+body {margin: 0;}
 .all-header { background:url(image/sellas2.png) no-repeat; background-size: cover;
     padding : 10px 15px ; }
 .all-header > * {width: 978px; margin: 0 auto; }
@@ -18,11 +18,9 @@
 .all-nav ul {width : 978px; margin: 0 auto 30px; list-style-type: none;  }
 .all-nav li {float: left; margin : auto 15px;}
 .all-nav li a {color: #eee; text-decoration: none; padding: 15px;}
+.all-nav li a:hover {text-shadow: 5px 5px 5px#eee; }
 
-
-
-
-
+.footer {background: url(image/sellas2.png) repeat-x; text-align: center; color: #eee; padding: 50px; }
 
 /* 공통사용 ul */
 * {color: #222;}
@@ -36,16 +34,16 @@ ul {list-style-type: none;}
     border: #eee 0 solid;
 }
 
-
-
-
 /* index제외한 전체 배경화면 적용 */
-body {
+.body {
     background-image: url(image/sellas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
 } 
+
+/* index */
+
 
 /* sign-up */
 .signup {
@@ -54,11 +52,10 @@ body {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    /* border-radius: 20%; */
-    /* text-decoration: underline 3px; */
 }
 .signup li {padding : 5px ;}
 .signup h6 {text-align:center; margin : auto auto -10px auto; padding: 5px ;}
+.signup ul li {height: 5px;}
 
 /* sign-in */
 .login h3, .signup h3 {
@@ -91,7 +88,7 @@ body {
 .btn-login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
 
 
-/* notice */
+/* notice, free */
 .notice {
     width: 1000px;
     margin: 50px auto;
@@ -117,6 +114,126 @@ table th {
     padding: 5px;
     color: #01181C;
 }
+.notice h1 {text-align: center;}
+.notice .table th {text-align: center; padding: 8px; }
+.notice .table td {padding: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.notice tr:hover{background-color: rgba(125, 205, 100, 0.5);}
+
+.notice .table td, .notice .table td + td + td  {text-align: center;}
+.notice .table td + td {text-align: left;}
+
+.notice .col1, .notice .col5 {width: 7%;}
+.notice .col4, .notice .col3 {width: 15%;}
+
+
+.btn-notice { 
+    margin: 0 auto;
+    width: 50px; height: 25px;
+    padding: 5px;
+    border-radius: 7px;
+    background: linear-gradient(#666, #333);
+    text-align: center;
+}
+.btn-notice:hover {background: linear-gradient(#333, #666) ; text-decoration: underline;}
+
+
+.notice-index { 
+    margin: 0 auto;
+    width: 700px;
+}
+.btn-notice-index ul{
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+}
+.btn-notice-index ul li { 
+    width: 10px;
+    display: inline-block;
+    padding: 5px;
+    background: linear-gradient(#666, #333);
+    border-radius: 10px;
+    color: #eee;
+}
+.btn-notice-index ul li:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+
+.table tr td a { color : black}
+
+
+/* detail , write */
+.write {
+    width: 974px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5)
+}   
+
+.page{
+    width: 800px;
+    min-height: 400px;
+    margin: 10px auto 0;
+    padding: 10px;
+}
+
+.write-title, .write-question { width: 780px; margin: 0 auto; }
+.write-title{ min-height: 50px; }
+
+.date {
+    float: right;
+    margin: 10px 100px;
+    padding: 15px;
+    color: #222;
+}
+
+.date::after {clear: both; content: ' '; display:block;}
+
+.write-question{
+    min-height: 300px;
+}
+
+
+.write-title-textarea, .write-title-textarea1 {
+    resize: none;
+    border: 0;
+    margin: 10px auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #222;
+}
+
+.write-title-textarea {
+    width: 400px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.write-title-textarea1 {
+    width: 740px;
+    min-height: 300px;
+}
+
+.btn-write { 
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+.btn-write a:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
+
+.btn-write a {
+    background: linear-gradient(#666,#333);
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0 10px;
+    }
+
+.write-div {
+    width: 99%;
+    height: 50px;
+    overflow: scroll;
+}
+
 
 
 /* contract */
@@ -132,4 +249,11 @@ table th {
  .contract-checkbox {
      color : #222;
  }
+
+ .contract-p {
+    border: 1px solid gray;
+    overflow: auto;
+    height: 300px;
+    text-align: both;
+  }
  

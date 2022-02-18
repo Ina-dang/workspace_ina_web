@@ -1,102 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <style>
-            body {margin: 0 auto;}
-            .write {
-                width: 974px;
-                min-height: 500px;
-                margin: 80px auto;
-                padding: 15px;
-                border-radius: 10px;
-                background-color: rgba(255, 255, 255, 0.5)
-            }   
-        
-            .page{
-                width: 800px;
-                min-height: 400px;
-                margin: 10px auto 0;
-                padding: 10px;
-            }
-            
-            .write-title, .write-question {
-                width: 780px;
-                margin: 0 auto;
-                
-            }
-            .write-title{
-                min-height: 50px;
-            }
-            
-            .date {
-                float: right;
-                margin: 10px 100px;
-                padding: 15px;
-                color: #222;
-            }
-
-            .date::after {clear: both; content: ' '; display:block;}
-            
-            .write-question{
-                min-height: 300px;
-            }
-            
-            .write-title-textarea, .write-title-textarea1 {
-                resize: none;
-                border: 0;
-                margin: 10px auto;
-                padding: 20px 20px;
-                border-radius: 10px;
-                background-color: rgba(255, 255, 255, 0.5);
-                color: #222;
-            }
-            
-            .write-title-textarea {
-                width: 400px;
-                height: 14px;
-                overflow: hidden;
-            }
-            
-            .write-title-textarea1 {
-                width: 740px;
-                min-height: 300px;
-            }
-            
-            .btn-write { 
-                padding: 10px;
-                margin: 20px auto;
-                text-align: center;
-            }
-            .btn-write a:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
-            
-            .btn-write a {
-                background: linear-gradient(#666,#333);
-                padding: 10px;
-                border-radius: 7px;
-                margin: 0 10px;
-                }
-
-            .write-div {
-                width: 99%;
-                height: 50px;
-                overflow: scroll;
-            }
-
-
-        </style>
-    <!-- 일단 css링크 넣어둠 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
+    <!-- header -->
     <header class="all-header">
-        <!-- header -->
         <div class="header-width">
         <div class="bg-logo">
             <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
@@ -114,18 +30,23 @@
     <!-- 게시판상세 화면 -->
     <main class="write">
         <section class="page">
-        <div class="write-title">
-            <textarea class="write-title-textarea" placeholder="제목을 입력해 주세요"></textarea>
-            <div class="date"> 2022 - 05 - 14</div>
-        </div>
-        <div class="write-question">
-            <textarea class="write-title-textarea1" placeholder="본문을 입력해 주세요"></textarea>
-        </div>
+            <div class="write-title">
+                <textarea class="write-title-textarea" placeholder="제목을 입력해 주세요"></textarea>
+                <div class="date"> 2022 - 05 - 14</div>
+            </div>
+            <div class="write-question">
+                <textarea class="write-title-textarea1" placeholder="본문을 입력해 주세요"></textarea>
+            </div>
 
-        <div class="btn-write">
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/write.html">수정</a>
-            <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/write.html">취소</a>
-        </div>
-    </div>
+            <div class="btn-write">
+                <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/write.html">수정</a>
+                <a href="file:///G:/%EB%82%B4%20%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C/workspace-ina-web/report/write.html">취소</a>
+            </div>
+        </section>
+    </main>
+    <!-- tail -->
+    <footer class="footer"> 
+        <address> Copyright &copy;. All rights reserved.</address>
+    </footer>
 </body>
 </html>

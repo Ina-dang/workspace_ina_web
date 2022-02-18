@@ -8,75 +8,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        .main-body { background-color: white; margin: 0; }
-        .main-body .all-header { background:url(image/sellas2.png) no-repeat; background-size: cover;
-        padding : 20px 15px;  }
-        .main-body .all-header > * {width: 978px; margin: 0 auto; padding: 20px; }
-        .bg-logo, .bg-detail { float: left; padding: 10px; margin: 0 auto; }
-        .main-body .bg-detail {width: 300px; text-align: right;}
-
-        .main-body .all-header::after, .commu-wrap::after {content: ' '; display:block; clear: both;}
-
-        .main-body .all-nav { background: #01181C; padding: 30px;}
-        .main-body .all-nav ul {width : 978px; margin: 0 auto 30px; padding: 40; list-style-type: none;  }
-        .main-body .all-nav li {float: left; margin : auto 60px ; }
-        .main-body .all-nav li a {color: #eee; text-decoration: none; }
-        
         /* commu-wrap both */
-        .commu-wrap { border: 3px solid lawngreen; background: lightgray; min-height: 800px; width: 978px; margin: 0 auto; padding: 10px;}
-        .commu-wrap > * {margin: 0 auto; }
-        .commu-wrap-right, .commu-wrap-left { float: left ; padding: 10px;}
-        
-        /* left side */
-        .commu-wrap-left {width: 70%; }
-        .commu-wrap1, .commu-wrap2, .commu-wrap3 {border: 3px solid lawngreen; margin: 5px auto; padding: 10px;}
-        .commu-wrap1 h3 {margin: 0 auto; padding : 5px}    
-        .commu-wrap1 p {text-align: center; margin: 0 auto; padding: 5px;}
-        .commu-wrap1-image {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-        .commu-wrap1 image { height:100%; width: 100%; border: 3px solid lawngreen;} 
-        .commu-wrap-right{width: 24%; border: 3px solid lawngreen; margin: 20px auto;}
-        
+.commu-wrap { background: #eee; min-height: 1600px; width: 978px; margin: 0 auto; padding: 10px;}
+.commu-wrap > * {margin: 0 auto; }
+.commu-wrap-right, .commu-wrap-left { float: left ; padding: 10px;}
 
-        /* commu-wrap3 */
-        .commu-wrap3 .party, .character, .security {
-            width: 97%; height: 200px;
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-            padding: 10px;
-        }
-        .party { background: url(image/lala1.jpg) no-repeat; }
-        .character { background: url(image/party.jpg) no-repeat; }
-        .security { background: url(image/sec.jpg) no-repeat; }
-        .commu-wrap3 h1 { margin: 0 ;}
-        
-        
-        
-        /* right side */
-        .main-btn-login { 
-            width : 150px; height: 25px; 
-            background: linear-gradient(#333, #666); cursor: pointer;
-            padding: 10px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 15px auto;
-        }
-        a {color: #ddd; text-decoration: none; text-align: center;}
-        .main-btn-login:hover {background: linear-gradient(#333, #666) ; text-decoration: underline; color: #222;}
-        
+/* left side */
+.commu-wrap-left { width: 70%; }
+.commu-wrap1, .commu-wrap2, .commu-wrap3 {margin: 5px auto; padding: 10px; background-color: rgba(255, 255, 255, .5);}
+.commu-wrap1 h3 {margin: 0 auto; padding : 5px; background-color: rgba(9, 24, 78, .8); color: #ddd;}    
+.commu-wrap1 p {text-align: both; margin: 0 auto; padding: 2px; font-weight: 500; 
+    background-color: rgba(9, 24, 78, .7); color: #ddd;}
+.commu-wrap1-image { height:100%; width: 100%; border-style: dashed none; border-color: #222;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.commu-wrap-right{width: 24%; margin: 20px auto;}
 
-        footer {background: url(image/sellas2.png) repeat-x; text-align: center; color: #eee; padding: 50px; }
-        address {border: 3px solid lawngreen;}
+
+/* commmu-wrap2 */
+.commu-wrap2 h1 {margin: 0;}
+.cody-wrap {padding: 5px; background-color: #292B4B55;}
+.cody-wrap1 {margin : 0 ; width : 200px; height: 300px; background-color: #222; text-align: center;}
+.cody-wrap1 img {margin: 10px auto;}
+.cody-wrap1 p {margin : 0;padding-top : 30px; color: #ddd;}
+.cody-wrap1 span {margin: 0; color: white;}
+
+/* commu-wrap3 */
+.commu-wrap3 .party, .character, .security {
+    width: 97%; height: 200px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    padding: 10px;
+}
+.party { background: url(image/lala1.jpg) no-repeat; transition: all .5s;}
+.character { background: url(image/party.jpg) no-repeat; transition: all .5s; }
+.security { background: url(image/map1.jpg) no-repeat; transition: all .5s; }
+.commu-wrap3 h1 { margin: 0 ;}
+.party:hover, .character:hover, .security:hover {transform: scale(1.05); }
+
+.scale-naver:hover img {transform: scale(1.05);}
+
+/* right side */
+.main-btn-login { 
+    width : 150px; height: 25px; 
+    background: linear-gradient(#333, #666); cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+a {color: #ddd; text-decoration: none; text-align: center;}
+.main-btn-login:hover {background: linear-gradient(#666, #333) ; text-decoration: underline; color: #222;}
+
     </style>
 </head>
-<body class="main-body"> 
-    <!-- 배경  다입히지말고..-->
+
+<body class="mainbody"> 
+    <!-- header -->
     <header class="all-header">
-        <!-- header -->
         <div class="header-width">
-        <div class="bg-logo">
-            <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
-        </div>
-        <!-- <p class="bg-detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
+            <div class="bg-logo">
+                <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
+            </div>
+            <!-- <p class="bg-detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
         </div>
     </header>
     <nav class="all-nav"> 
@@ -101,11 +95,21 @@
                 <p>3. 별빛 심포니에 위치한 npc가 제공하는 다양한 이벤트에 참여해 보세요.</p>
             </div>
             <div class="commu-wrap2">
-                <!-- commu2 사진이랑 ㅇㅇㅇ흥으에-->
-            <h1>이 황금시대의 가치를 충분히</h1>
-            <ul>
-                <li></li>
-            </ul>
+                    <!-- commu2 사진이랑 ㅇㅇㅇ흥으에-->
+                <h1>메이플 코디</h1>
+                <div class="cody-wrap">
+                    <ul>
+                        <li>
+                            <div class="cody-wrap1">
+                                <p>제 메애기 예쁘죠?</p>
+                                <span><img src="image/chac.jpg" alt=""></span>
+                                <p></p>
+                                <span><img src="image/ely.jpg" alt="">이나당</span>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="commu-wrap3">
                 <!-- commu3 이미지1 -->
@@ -128,12 +132,11 @@
             <div class="main-btn-login"><a href="#">로그인</a></div>
             <div class="main-btn-login"><a href="#">회원가입</a></div>
             <div class="main-btn-login"><a href="#">id찾기</a></div>
-
         </div>
     </div>
-    <footer>
+    <!-- tail -->
+    <footer class="footer">
         <address> Copyright &copy;. All rights reserved.</address>
-        <!-- tail -->
     </footer>
 </body>
 </html>
