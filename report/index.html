@@ -9,56 +9,84 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <style>
+
         /* commu-wrap both */
-.commu-wrap { background: #eee; min-height: 1600px; width: 978px; margin: 0 auto; padding: 10px;}
-.commu-wrap > * {margin: 0 auto; }
-.commu-wrap-right, .commu-wrap-left { float: left ; padding: 10px;}
+        .commu-wrap { background: #eee; min-height: 1600px; width: 978px; margin: 0 auto; padding: 10px;}
+        .commu-wrap > * {margin: 0 auto; }
+        .commu-wrap-right, .commu-wrap-left { float: left ; padding: 10px;}
 
-/* left side */
-.commu-wrap-left { width: 70%; }
-.commu-wrap1, .commu-wrap2, .commu-wrap3 {margin: 5px auto; padding: 10px; background-color: rgba(255, 255, 255, .5);}
-.commu-wrap1 h3 {margin: 0 auto; padding : 5px; background-color: rgba(9, 24, 78, .8); color: #ddd;}    
-.commu-wrap1 p {text-align: both; margin: 0 auto; padding: 2px; font-weight: 500; 
-    background-color: rgba(9, 24, 78, .7); color: #ddd;}
-.commu-wrap1-image { height:100%; width: 100%; border-style: dashed none; border-color: #222;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.commu-wrap-right{width: 24%; margin: 20px auto;}
+        /* left side */
+        .commu-wrap-left { width: 70%; }
+        .commu-wrap1, .commu-wrap2, .commu-wrap3 {margin: 5px auto; padding: 10px; background-color: rgba(255, 255, 255, .5); border-radius: 5px;}
+        .commu-wrap1 h3 {margin: 0 auto; padding : 5px; background-color: rgba(9, 24, 78, .8); color: #ddd;}    
+        .commu-wrap1 p {text-align: both; margin: 0 auto; padding: 5px; font-weight: 500; 
+            background-color: rgba(9, 24, 78, .7); color: #ddd;}
+        .commu-wrap1-image { height:100%; width: 100%; border-style: dashed none; border-color: #222;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .commu-wrap-right{width: 24%; margin: 20px auto;}
 
 
-/* commmu-wrap2 */
-.commu-wrap2 h1 {margin: 0;}
-.cody-wrap {padding: 5px; background-color: #292B4B55;}
-.cody-wrap1 {margin : 0 ; width : 200px; height: 300px; background-color: #222; text-align: center;}
-.cody-wrap1 img {margin: 10px auto;}
-.cody-wrap1 p {margin : 0;padding-top : 30px; color: #ddd;}
-.cody-wrap1 span {margin: 0; color: white;}
+        /* commmu-wrap2 */
+        .commu-wrap2 h1 {margin: 10px auto 10px 5px ;  font-family: 'Maplestory-Bold'; display: block;}
+        .cody-wrap {margin: 20px auto; padding : 5px; background-color: #292B4B55;}
+        .ballon { border: 1px solid #eee; padding: 15px; width:130px;
+            border-radius: 10px; position: relative; margin: 10px auto; color: #eee;
+            font-family: 'Maplestory-Light';}
+        .ballon::after{
+            position: absolute; content: ' '; border: solid; 
+            border-color: #eee  transparent transparent transparent;
+            border-width: 15px 10px;
+            left: 70px; bottom: -30px; width: 0px; height: 0px;
+        }
+        .cody-wrap1 {float : left; margin : 10px 10px; 
+            width : 180px; height: 300px; background-color: #222; 
+            text-align: center; padding: 5px; border: 2px #aaa dashed; border-radius: 10px;
+            }
+        .cody-wrap img:hover{transform: scale(1.08);}
+        .cody-wrap1 > a { font-family: 'Maplestory-Light'; }
+        .cody-wrap1 img {margin: 15px auto; transition: all .5s;}
+        .cody-wrap1 span {margin: 0; color: white;}
+        .server-nick { display: inline-block; }
+        .cody-wrap > ul { margin: 0 auto; padding: 0;}
+        .cody-wrap::after {content: ' '; display: block; clear: both;}
 
-/* commu-wrap3 */
-.commu-wrap3 .party, .character, .security {
-    width: 97%; height: 200px;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    padding: 10px;
-}
-.party { background: url(image/lala1.jpg) no-repeat; transition: all .5s;}
-.character { background: url(image/party.jpg) no-repeat; transition: all .5s; }
-.security { background: url(image/map1.jpg) no-repeat; transition: all .5s; }
-.commu-wrap3 h1 { margin: 0 ;}
-.party:hover, .character:hover, .security:hover {transform: scale(1.05); }
+        /* commu-wrap3 */
+        .commu-wrap3 .party, .character, .security {
+            width: 97%; height: 200px;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            padding: 10px;
+        }
+        .party { background: url(image/lala1.jpg) no-repeat; transition: all .5s; margin-bottom: 15px;}
+        .character { background: url(image/party.jpg) no-repeat; transition: all .5s; padding-bottom: 0;}
+        .security { background: url(image/map1.jpg) no-repeat; transition: all .5s; margin-bottom: 15px;}
+        .party:hover, .character:hover, .security:hover {transform: scale(1.02); border-radius: 5px;}
+        .commu-wrap3 h1 { margin: 5px  auto; font-family: 'Maplestory-Bold';}
+        .commu-wrap3 > p {font-family: 'Maplestory-Light';}
 
-.scale-naver:hover img {transform: scale(1.05);}
-
-/* right side */
-.main-btn-login { 
-    width : 150px; height: 25px; 
-    background: linear-gradient(#333, #666); cursor: pointer;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 15px auto;
-}
-a {color: #ddd; text-decoration: none; text-align: center;}
-.main-btn-login:hover {background: linear-gradient(#666, #333) ; text-decoration: underline; color: #222;}
+        /* right side */
+        .commu-wrap-right { height: 395px; background-color: rgba(255, 255, 255, .5); border-radius: 5px;}
+        .main-btn-login { 
+            width : 150px; height: 25px; 
+            background: linear-gradient(#333, #666); cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 100px auto;
+        }
+        .main-btn-login1 {margin: -80px auto 0 33px;}
+        .main-btn-login2 { 
+            width : 70px; height: 25px; 
+            background: linear-gradient(#333, #666); cursor: pointer;
+            text-align: center;
+            border-radius: 10px;
+            padding: 7px;
+            display: inline-block;
+        }
+        .main-btn-login3 {display: inline-block; padding: 3px; margin: 5px auto; width: 30px;}
+        a {color: #ddd; text-decoration: none; text-align: center;}
+        .main-btn-login:hover {background: linear-gradient(#666, #333) ; text-decoration: underline; color: #222;}
 
     </style>
 </head>
@@ -68,7 +96,7 @@ a {color: #ddd; text-decoration: none; text-align: center;}
     <header class="all-header">
         <div class="header-width">
             <div class="bg-logo">
-                <img src="image/MapleStory-logo.png" alt="메이플스토리 로고">
+                <a href="http://127.0.0.1:5500/report/index.html"><img src="image/MapleStory-logo.png" alt="메이플스토리 로고"></a>
             </div>
             <!-- <p class="bg-detail"> 사이트 간략 소개 쓰기 싫은뎅.. </p> -->
         </div>
@@ -76,8 +104,8 @@ a {color: #ddd; text-decoration: none; text-align: center;}
     <nav class="all-nav"> 
         <!-- main-banner 안에 공지사항이랑 자유게시판 링크-->
         <ul>
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">자유게시판</a></li>
+            <li><a href="http://127.0.0.1:5500/report/notice.html">공지사항</a></li>
+            <li><a href="http://127.0.0.1:5500/report/free.html">자유게시판</a></li>
         </ul>
     </nav>
 
@@ -87,7 +115,7 @@ a {color: #ddd; text-decoration: none; text-align: center;}
             <div class="commu-wrap1">
                 <!-- 이미지 , h5, 글 -->
                 <div class="commu-wrap1-image">
-                <image src="image/events1.png" alt="이벤트이미지"></image>
+                    <a href="https://maplestory.nexon.com/News/Event/543"><image src="image/events1.png" alt="이벤트이미지"></image></a>
                 </div>
                 <h3> '별빛 심포니 이벤트' 2021년 12월 30일 점검 후 시작</h3>
                 <p>1. 화면 왼쪽의 이벤트 알림이를 통해'[별빛 심포니] 별에 깃든 음악' 퀘스트를 완료합니다.</p>
@@ -96,16 +124,34 @@ a {color: #ddd; text-decoration: none; text-align: center;}
             </div>
             <div class="commu-wrap2">
                     <!-- commu2 사진이랑 ㅇㅇㅇ흥으에-->
-                <h1>메이플 코디</h1>
+                <h1>메이플 코디</h1><h5>(닉네임 클릭 시 .gg로 이동합니다)</h5>
                 <div class="cody-wrap">
                     <ul>
                         <li>
                             <div class="cody-wrap1">
-                                <p>제 메애기 예쁘죠?</p>
-                                <span><img src="image/chac.jpg" alt=""></span>
-                                <p></p>
-                                <span><img src="image/ely.jpg" alt="">이나당</span>
-                                
+                                <div class="ballon">아잉체고</div>
+                                <span><img src="image/riyemoo.png" alt="캐릭터"></span>
+                                <div>
+                                <a href="https://maple.gg/u/%EB%A6%AC%EC%98%88%EB%AC%B4"><img src="image/server1.png" alt="엘리시움">리예무</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cody-wrap1">
+                                <div class="ballon">내가 젤 이뽀☆</div>
+                                <span><img src="image/boyeon.png" alt="캐릭터"></span>
+                                <div>
+                                <a href="https://maple.gg/u/%EB%B3%B4%EC%97%B0%EC%95%84%EB%8D%B8"><img src="image/server1.png" alt="엘리시움">보연아델</a>
+                                </div>  
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="cody-wrap1">
+                                <div class="ballon">메이플이 곧 현실임</div>
+                                <span><img src="image/jaeik.png" alt="캐릭터"></span>
+                                <div>
+                               <a href="https://maple.gg/u/%EC%A7%B9%EC%82%A5"><img src="image/server.png" alt="리부트">짹삥</a>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -113,15 +159,15 @@ a {color: #ddd; text-decoration: none; text-align: center;}
             </div>
             <div class="commu-wrap3">
                 <!-- commu3 이미지1 -->
-                <div class="party"></div>
+                <a href="https://maplestory.nexon.com/Guide/GameInformation/SpecialContents/PartyQuest"><div class="party"></div></a>
                 <h1> 파티퀘스트 </h1>
                 <p>이번 달의 파티퀘스트 일정 정복하기! 용사님과 함께 파티퀘스트를 즐기는 방법</p>
                 <!-- commu3 이미지 -->
-                <div class="character"></div>
+                <a href="https://maplestory.nexon.com/Guide/GameInformation/Skill/4thPromotionAndHyperSkill"><div class="character"></div></a>
                 <h1> 캐릭터 & 스킬 </h1>
                 <p>모든 직업과 스킬을 한눈에! 메이플 스토리의 캐릭터, 스킬 정보 확인하기</p>
                 <!-- commu3 이미지 -->
-                <div class="security"></div>
+                <a href="https://maplestory.nexon.com/Guide/GameInformation/Security/UOTPSettings"><div class="security"></div></a>
                 <h1> 보안강화하기 </h1>
                 <p> 편리와 보안을 한방에! 안전하고 편하게 메이플 스토리 즐기기</p>
             </div>
@@ -129,9 +175,18 @@ a {color: #ddd; text-decoration: none; text-align: center;}
         <!-- commu login, 회원가입, id/pw찾기 right  -->
         <div class="commu-wrap-right">
             <!-- 로그인 회원가입 찾기 -->
-            <div class="main-btn-login"><a href="#">로그인</a></div>
-            <div class="main-btn-login"><a href="#">회원가입</a></div>
-            <div class="main-btn-login"><a href="#">id찾기</a></div>
+            <div class="main-btn-login"><a href="http://127.0.0.1:5500/report/signin.html">로그인</a></div>
+            <div class="main-btn-login1">
+                <div class="main-btn-login2"><a href="http://127.0.0.1:5500/report/contract.html">회원가입</a></div>
+                <div class="main-btn-login2"><a href="#">id찾기</a></div>
+            </div>
+            <h5>메이플을 더 안전하고 편리하게 이용하세요</h5>
+            <ul>
+                <li class="main-btn-login3"><a href="http://127.0.0.1:5500/report/signin.html"><img src="image/facebook.png" alt="페이스북 로그인"></a></li>
+                <li class="main-btn-login3"><a href="http://127.0.0.1:5500/report/signin.html"><img src="image/google.png" alt="구글 로그인"></a></li>
+                <li class="main-btn-login3"><a href="http://127.0.0.1:5500/report/signin.html"><img src="image/naver-icon.png" alt="네이버 로그인"></a></li>
+                <li class="main-btn-login3"><a href="http://127.0.0.1:5500/report/signin.html"><img src="image/apple.png" alt="애플 로그인"></a></li>
+            </ul>
         </div>
     </div>
     <!-- tail -->
