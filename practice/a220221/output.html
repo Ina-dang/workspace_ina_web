@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        writing into an HTML element, using innerHTML ==> using id
+        writing into the HTML output using document.write()
+        writing into an alert box, using widow.alert()
+        writing into the browser console, using console.log()
+     -->
+     <h1>My First Web Page</h1>
+     <p>My First Paragraph</p>
+     
+     <!-- document.getElementByID.innerHTML -->
+     <p id="demo"></p>
+     <script>
+         document.getElementById("demo").innerHTML = 5 + 6;
+     </script>
+
+     <!-- document.write() -->
+     <script>
+         document.write(5 + 6);
+     </script>
+     <!-- Using document.write() after an HTML document is loaded, will delete all existing HTML:-->
+
+     <!-- window.alert() -->
+     <script>
+    //  window.alert(5 + 6); // window는 전역변수이므로 생략가능
+     alert(5 + 6);
+    </script>
+
+    <!-- console.log() -->
+    <script>
+        //for debugging
+        console.log(5 + 6);
+    </script>
+
+    <!-- window.print() ==> print object  -->
+    <button onclick="window.print()"> Print this page </button>
+</body>
+</html>
