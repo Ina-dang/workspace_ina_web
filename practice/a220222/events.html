@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+
+    <h2>JavaScript HTML Events</h2>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo2").innerHTML = Date();
+        }
+        </script>
+        <p id="demo2"></p>
+    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+</body>
+</html>

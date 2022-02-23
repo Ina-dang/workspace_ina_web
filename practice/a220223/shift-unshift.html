@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The unshift() method adds new elements to the beggining of an array:</p>
+
+    <p id="demo"> </p>
+    <p id="demo1"> </p>
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+    <p id="demo4"> </p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        fruits.unshift("Lemon");
+        document.getElementById("demo1").innerHTML = fruits;
+        document.getElementById("demo2").innerHTML = fruits.unshift("Cherry"); //갯수출력
+
+        fruits[fruits.length] = "Kiwi";
+        document.getElementById("demo3").innerHTML = fruits[0];
+        delete fruits[0];
+
+        document.getElementById("demo4").innerHTML = fruits[0];
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Concat</h2>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        // const myChildren = myGirls.concat(myBoys);
+        const myChildren = myBoys.concat(myGirls);
+
+        document.getElementById("demo").innerHTML = myChildren;
+        
+        const array1 = ["Cecilie", "Lone"];
+        const array2 = ["Emil", "Tobias", "Linus"];
+        const array3 = ["Robin", "Morgan"];
+        const myChildren1 = array1.concat(array2, array3);
+        
+        document.getElementById("demo1").innerHTML = myChildren1;
+    </script>
+</body>
+</html>

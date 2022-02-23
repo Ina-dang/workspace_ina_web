@@ -10,14 +10,23 @@ String.prototype.myfunction = function(){
     return this[0] + this[this.length - 1] ;
 } //this == 이 메서드를 호출할 객체
 
+//함수 목적으로 많이쓰긴 하지만 반드시 함수일 필요는 없다
+String.prototype.abc = "가나다라";
+String.def = "마바사아";
+
 // var result = myfunction(str);
 //객체 지향 하려면 마이펑션을 메서드로 만들어야한다. 그 뒤에 또 myfunction(). 등으로 메서드 체이닝 가능
 var result = str.myfunction(); 
 
 console.log(result);
 console.log("abcde".myfunction());
+console.log("abcde".abc);
+console.log(String.def); //마바사아
+console.log("abcde".def); //undefined
+console.log(String.fromCharCode(65)); //A
 
 // no, name, kor, eng, mat == 변수 //  sum, avg == 함수형태(메서드 될 녀석들)
 // 학생 10명을 저장 ==> 70개 >> 프로토타입을 사용하면 52개로 줄어듦(총점,평균은 프로토타입)
+
 
 
