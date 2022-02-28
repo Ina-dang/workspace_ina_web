@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <script>
+        // 비동기처리
+        $(function(){
+            // 레디함수
+            $("button").click(function(){
+                $.ajax({
+                    url : "student.xml",
+                    success : function(data){
+                        console.log(data);
+                        var str = "<table border = 1>";
+                    // url : "https://rss.joins.com/joins_it_list.xml",
+                    // success : function(data){
+                    //     console.log(data);
+                    //     var str = "<table border = 1>";
+                    //     $(data).find("item").each(function(){
+                    //         var title = $(this).find("title").text();
+                    //         var link = $(this).find("link").text();
+                    //         var pubDate = $(this).find("pubDate").text();
+                    //         var author = $(this).find("author").text();
+
+                    //         str += "<tr>"
+                    //         str += "<td><a href ='" + link + "'" + title + "</a></td>";
+                    //         str += "<td>" + author + "</td>";
+                    //         str += "<td>" + pubDate + "</td>";
+                    //         str += "</tr>"
+                    //     })
+                    //     str += "</table>";
+                    //     $("body").append(str);
+                        $(data).find("student").each(function(){
+                            var no = $(this).find("no").text();
+                            var name = $(this).find("name").text();
+                            var kor = $(this).find("kor").text();
+
+                            str += "<tr>"
+                            str += "<td>" + no + "</td>";
+                            str += "<td>" + name + "</td>";
+                            str += "<td>" + kor + "</td>";
+                            str += "</tr>"
+                        })
+                        str += "</table>";
+                        $("body").append(str);
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button> 버튼 </button>
+    
+</body>
+</html>

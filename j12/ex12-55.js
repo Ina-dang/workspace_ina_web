@@ -4,12 +4,16 @@ var res = [1,2,3].map(function(item){
 // }).map; --chaning 가능
 });
 console.log(res);
+console.log(typeof [1,2,3].map);
+
+
 
 // 콜백 함수를 사용하는 고차 함수 filter
 var res = [1, 2, 3].filter(function(item){
     return item % 2;
 }); //프리디케이트 >> 조건식 리턴 >> 불린값리턴
 console.log(res);
+console.log(typeof [1, 2, 3].filter);
 
 //filter 화살표함수
 var res = [1, 2, 3].filter(item => item % 2);
@@ -21,10 +25,12 @@ var res = [1, 2, 3, 4].reduce(function (acc, cur) {
     return acc + cur;
 }, 0);
 console.log(res);
+console.log(typeof [1, 2, 3, 4].reduce);
+
 
 //reduce 화살표함수
-var res = [1, 2, 3, 4].reduce((acc, cur) => {
+var res = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce((acc, cur) => {
     console.log(acc, cur);
     return acc + cur;
-}, 0)
+}, 100)
 console.log(res);
