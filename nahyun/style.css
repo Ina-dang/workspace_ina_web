@@ -14,21 +14,21 @@
 
 /* 전체CSS 공통적용 header, nav, footer */
 body {margin: 0;}
-.all-header { background:url(image/sellas2.png) no-repeat; background-size: cover;
-    padding : 10px 15px ; }
+.all-header { background:#111 no-repeat; background-size: cover;
+    padding : 5px 10px ; }
 .all-header > * {width: 978px; margin: 0 auto; }
 .bg-logo, .bg-detail { float: left; padding: 10px; margin: 0 auto;}
 .bg-detail {width: 300px; text-align: right;}
     
 .all-header::after, .commu-wrap::after {content: ' '; display:block; clear: both;}
 
-.all-nav { background: #01181C; padding: 20px;}
+.all-nav { background: #333; padding: 10px;}
 .all-nav ul {width : 978px; margin: 0 auto 30px; list-style-type: none;  }
 .all-nav li {float: left; margin : auto 15px;}
 .all-nav li a {color: #eee; text-decoration: none; padding: 15px; font-family: 'Maplestory-Light';}
-.all-nav li a:hover {text-shadow: 5px 5px 5px#eee; }
+.all-nav li a:hover {text-shadow: 0px 0px 1px#eee; }
 
-.footer {background: url(image/sellas2.png) no-repeat; text-align: center; 
+.footer {background: #111 no-repeat; text-align: center; 
     text-shadow: #222 3px 3px 3px; padding: 50px; background-size: cover; }
 .footer address {color: #eee;}
 
@@ -217,7 +217,7 @@ table th {
 .btn-notice { 
     margin: 0 auto;
     width: 50px; height: 25px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 7px;
     background: linear-gradient(#666, #333);
     text-align: center;
@@ -236,7 +236,7 @@ table th {
 .btn-notice-index ul li { 
     width: 10px;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 10px;
     background: linear-gradient(#666, #333);
     border-radius: 10px;
     color: #eee;
