@@ -1,7 +1,11 @@
-* {font-family: 'Noto Sans KR', sans-serif; }
+/* 공통사용 ul */
+* {color: #222; letter-spacing: -0.03em; margin: 0; padding: 0;
+    list-style: none; border: 0; text-decoration: none; font-family: 'NanumBarunGothic','Noto Sans KR', sans-serif;}
+* > a { color: #eee; text-decoration: none; text-align: center;}
+ul {list-style-type: none;}
 @font-face {
-    font-family: 'Noto Sans KR';
-    src: url(fonts/AnyConv.com__NotoSansKR-Regular.woff);
+    font-family: 'NanumBarunGothic';
+    src: url(fonts/NanumBarunGothic.woff);
 }
 @font-face {
     font-family: 'Maplestory-Light';
@@ -14,7 +18,7 @@
 
 /* 전체CSS 공통적용 header, nav, footer */
 body {margin: 0;}
-.all-header { background:#111 no-repeat; background-size: cover;
+.all-header { background : url(image/bg.png) no-repeat; background-size: cover;
     padding : 5px 10px ; }
 .all-header > * {width: 978px; margin: 0 auto; }
 .bg-logo, .bg-detail { float: left; padding: 10px; margin: 0 auto;}
@@ -25,17 +29,14 @@ body {margin: 0;}
 .all-nav { background: #333; padding: 10px;}
 .all-nav ul {width : 978px; margin: 0 auto 30px; list-style-type: none;  }
 .all-nav li {float: left; margin : auto 15px;}
-.all-nav li a {color: #eee; text-decoration: none; padding: 15px; font-family: 'Maplestory-Light';}
+.all-nav li a {color: #eee; text-decoration: none; padding: 15px;}
 .all-nav li a:hover {text-shadow: 0px 0px 1px#eee; }
 
 .footer {background: #111 no-repeat; text-align: center; 
     text-shadow: #222 3px 3px 3px; padding: 50px; background-size: cover; }
 .footer address {color: #eee;}
 
-/* 공통사용 ul */
-* {color: #222;}
-* > a { color: #eee; text-decoration: none; text-align: center;}
-ul {list-style-type: none;}
+
 
 .input {
     width: 300px;
@@ -55,67 +56,75 @@ ul {list-style-type: none;}
 
 /* index */
     /* commu-wrap both */
-    .commu-wrap { background: #eee; min-height: 1600px; width: 978px; margin: 0 auto; padding: 10px;}
+    .commu-wrap { background: #ffffff; min-height: 1600px; width: 978px; margin: 0 auto; padding: 10px;}
     .commu-wrap > * {margin: 0 auto; }
     .commu-wrap-right, .commu-wrap-left { float: left ; padding: 10px;}
 
     /* left side */
-    .commu-wrap-left { width: 70%; }
-    .commu-wrap1, .commu-wrap2, .commu-wrap3 {margin: 5px auto; padding: 10px; background-color: rgba(255, 255, 255, .5); border-radius: 5px;}
-    .commu-wrap1 h3 {margin: 0 auto; padding : 5px; background-color: rgba(9, 24, 78, .8); color: #ddd;}    
-    .commu-wrap1 p {text-align: both; margin: 0 auto; padding: 5px; font-weight: 500; 
-        background-color: rgba(9, 24, 78, .7); color: #ddd;}
-    .commu-wrap1-image { height:100%; width: 100%; border-style: dashed none; border-color: #222;
+    .commu-wrap-left { width: 700px; }
+    .commu-wrap1, .commu-wrap2, .commu-wrap3 {margin: 5px auto; padding: 10px; background-color: #eeeeee; border-radius: 5px;}
+    .commu-wrap1-image + div {margin: 5px auto; padding : 20px; background-color: #ffffff; margin: 5px auto; border-radius: 3px; }    
+    .commu-wrap1-image + div > hr {height: 1.5px; color: #eeeeee; background-color: #eeeeee; margin: 5px auto;}    
+    .commu-wrap1-image + div > p {margin-top: 8px; font-size: 13px; color: #666;}
+    .commu-wrap1-image { height:100%; width: 680px; border-radius: 3px;
         white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .commu-wrap-right{width: 24%; margin: 20px auto;}
 
 
     /* commmu-wrap2 */
-    .commu-wrap2 h1 {margin: 10px auto 10px 5px ;  font-family: 'Maplestory-Bold'; display: block;}
-    .cody-wrap {margin: 20px auto; padding : 5px; background-color: #292B4B55;}
-    .ballon { border: 1px solid #eee; padding: 15px; width:130px;
-        border-radius: 10px; position: relative; margin: 10px auto; color: #eee;
-        font-family: 'Maplestory-Light';}
-    .ballon::after{
-        position: absolute; content: ' '; border: solid; 
-        border-color: #eee  transparent transparent transparent;
-        border-width: 15px 10px;
-        left: 70px; bottom: -30px; width: 0px; height: 0px;
-    }
+    .commu-wrap2 { background : url(image/community_bg.jpg) no-repeat; height: 445px;}
+    .commu-wrap2 p:nth-child(1) {font-size:25px; color:  #eee; margin: 10px auto 10px 5px ; display: block;}
+    .commu-wrap2 p:nth-child(2) {font-size:13px; color:  #eee; margin: 10px auto 10px 5px ; display: block;}
+    .cody-wrap {margin: 20px auto; padding : 5px; }
     .cody-wrap1 {float : left; margin : 10px 10px; 
-        width : 180px; height: 300px; background-color: #222; 
-        text-align: center; padding: 5px; border: 2px #aaa dashed; border-radius: 10px;
+        width : 180px; height: 300px;  
+        text-align: center; padding: 5px; 
+        
         }
     .cody-wrap img:hover{transform: scale(1.08);}
-    .cody-wrap1 > div > a { font-family: 'Maplestory-Light'; }
     .cody-wrap1 > div > a > img {margin: 0 auto;}
     .cody-wrap1 img {margin: 15px auto; transition: all .5s;}
     .cody-wrap1 span {margin: 0; color: white;}
-    .server-nick { display: inline-block; }
-    .cody-wrap > ul { margin: 0 auto; padding: 0;}
+    .cody-wrap > ul { list-style: none;}
+    .cody-wrap > ul > li {float : left; padding: 10px;}
+    .cody-wrap > ul::after {content: ' '; display: block; clear: both;}
+    .char-left {margin-left: 45px;  margin-top: 136px;}
+    .char-center {margin-left: 125px;  margin-top: 168px;}
+    .char-right {margin-left: 110px;  margin-top: 150px;}
+    .nick-left {margin-left: 45px}
+    .nick-center {margin-left: 90px}
+    .nick-right {margin-left: 110px}
     .cody-wrap::after {content: ' '; display: block; clear: both;}
 
     /* commu-wrap3 */
     .commu-wrap3 .party, .character, .security {
-        width: 97%; height: 200px;
-        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-        padding: 10px;
+        width: 630px; height: 200px;
+        white-space: nowrap; text-overflow: ellipsis;
+        padding: 10px;   overflow: hidden;
+        border-radius: 2px;
+        /* transition: all 300ms; */
     }
-    .party { background: url(image/lala1.jpg) no-repeat; transition: all .5s; margin-bottom: 15px;}
-    .character { background: url(image/party.jpg) no-repeat; transition: all .5s; padding-bottom: 0;}
-    .security { background: url(image/map1.jpg) no-repeat; transition: all .5s; margin-bottom: 15px;}
-    .party:hover, .character:hover, .security:hover {transform: scale(1.02); border-radius: 5px;}
-    .commu-wrap3 h1 { margin: 5px  auto; font-family: 'Maplestory-Bold';}
+    .party { background: url(image/lala1.jpg) no-repeat; margin-bottom: 15px;}
+    .character { background: url(image/party.jpg) no-repeat; overflow: hidden; padding-bottom: 0;}
+    .security { background: url(image/map1.jpg) no-repeat; overflow: hidden; margin-bottom: 15px;}
+    .party:hover, .character:hover, .security:hover {
+         overflow: hidden;
+        text-overflow: ellipsis; display: block;
+        /* transform: scale(1.02); */
+    }
+    .commu-wrap3 h1 { margin: 5px  auto; }
     .commu-wrap3 > p {font-family: 'Maplestory-Light';}
 
     /* right side */
     .commu-wrap-right { height: 395px; background-color: rgba(255, 255, 255, .5); border-radius: 5px;}
+    .commu-wrap-right > h5 {font-size: 10px; text-align: center; margin: 10px auto 0;}
+    .commu-wrap-right > ul {margin : 0 auto;}
     .main-btn-login { 
         width : 150px; height: 25px; 
         background: linear-gradient(#333, #666); cursor: pointer;
         padding: 10px;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 3px;
         margin: 100px auto;
     }
     .main-btn-login1 {margin: -80px auto 0 33px;}
@@ -123,11 +132,12 @@ ul {list-style-type: none;}
         width : 70px; height: 25px; 
         background: linear-gradient(#333, #666); cursor: pointer;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 3px;
         padding: 7px;
         display: inline-block;
     }
-    .main-btn-login3 {display: inline-block; padding: 3px; margin: 5px auto; width: 30px;}
+    
+    .main-btn-login3 {display: inline-block; padding: 3px; margin: 0 auto; width: 30px;}
     .main-btn-login:hover {background: linear-gradient(#666, #333) ; text-decoration: underline; color: #222;}
 
 
@@ -206,7 +216,7 @@ table th {
 .notice h1 {text-align: center;}
 .notice .table th {text-align: center; padding: 8px; }
 .notice .table td {padding: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.notice tr:hover{background-color: rgba(125, 205, 100, 0.5);}
+.notice tr + tr:hover{background-color: rgba(125, 205, 100, 0.5);}
 
 .notice .table td, .notice .table td + td + td  {text-align: center;}
 .notice .table td + td {text-align: left;}
